@@ -1,0 +1,103 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    title Harmoni - login
+    link(rel='shortcut icon' href='assets/images/favicon.png')
+    // fraimwork - css include
+    link(rel='stylesheet' type='text/css' href='assets/css/bootstrap.min.css')
+    // icon css include
+    link(rel='stylesheet' type='text/css' href='assets/css/fontawesome-all.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/flaticon.css')
+    // custom css include
+    link(rel='stylesheet' type='text/css' href='assets/css/style.css')
+    style.
+      @media screen and (min-width:0px) and (max-width:980px) {
+      #slide-section {
+      margin-top: -5px !important;
+      }
+      }
+      
+      body {
+      background-image: url("/assets/images/blog/big-ebent1.jpg");
+      background-size: cover;
+      position: relative;
+      }
+      
+      body::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      backdrop-filter: blur(15px);
+      }
+      
+      #error {
+      font-weight: 900;
+      color: #fff;
+      }
+  body
+    // preloader - start
+    #preloader
+    // preloader - end
+    #login-modal.reglog-modal-wrapper.clearfix(style='background-image: url(assets/images/login-modal-bg.jpg);')
+      .overlay-black.clearfix
+        // leftside-content - start
+        .leftside-content
+          .site-logo-wrapper.mb-80
+            a.logo(href='/')
+              img(src='assets/images/2.site-logo.png' alt='logo_not_found')
+          .register-login-link.mb-80
+            ul
+              li.active
+                a(href='/login') Login
+              li
+                a(href='/register') Register
+          .copyright-text.d-none
+            p.m-0 ©2019 
+              a.yellow-color(href='/') Harmoni.com
+              | all right reserved, made with
+              i.fas.fa-heart
+              | by
+              | jThemes Studio
+        // leftside-content - end
+        // rightside-content - start
+        .rightside-content.text-center
+          .mb-30
+            h2.form-title.title-large.white-color
+              | Account
+              strong Login
+            span.form-subtitle.white-color
+              | Login to our website, or
+              strong REGISTER
+          // If you want to Put Login With Google
+          .fb-login-btn.mb-30
+            a(href='#!')
+              span.icon
+                i.fab.fa-facebook-f
+              | login with facebook
+          .or-text.mb-30
+            span or sign in
+          .login-form.text-center.mb-2
+            form.form.form--login(action='https://127.0.0.1:3000/login' method='POST')
+              .form-item
+                input#email(type='email' placeholder='example@gmail.com' required)
+              .form-item
+                input#password(type='password' placeholder='Password' required)
+              button.login-btn(type='submit') login now
+          .bottom-text.white-color
+            p.m-0
+              | * All field mandatory.
+            p#error.my-2
+              | Error massage
+        // rightside-content - end
+    script.
+      document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("preloader").style.display = "none";
+      })
+    script(src='js/login.js')

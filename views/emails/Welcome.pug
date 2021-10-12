@@ -1,0 +1,18 @@
+extends baseEmail
+
+block content
+    p Hi #{first_name} ,
+    p Welcome to Harmoni, we're glad to have you 🎉🙏
+    p Thank you for book #{venue_name} on #{venue_date} 
+    p Please contact #{venue_phone} to confirm the booking
+    table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+     tbody
+         tr
+             td(align='left')
+                 table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+                     tbody
+                         tr
+                             td
+                                 a(href=`http://127.0.0.1:3000/contact/`, target='_blank') 
+    p If you need any help with booking your next venue, please don't hesitate to contact me!
+    

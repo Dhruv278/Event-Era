@@ -1,0 +1,751 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    title Dashbord
+    link(rel='shortcut icon' href='assets/images/favicon.png')
+    // fraimwork - css include
+    link(rel='stylesheet' type='text/css' href='assets/css/bootstrap.min.css')
+    // icon css include
+    link(rel='stylesheet' type='text/css' href='assets/css/fontawesome-all.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/flaticon.css')
+    // carousel css include
+    link(rel='stylesheet' type='text/css' href='assets/css/slick.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/slick-theme.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/animate.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/owl.carousel.min.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/owl.theme.default.min.css')
+    // others css include
+    link(rel='stylesheet' type='text/css' href='assets/css/magnific-popup.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/jquery.mCustomScrollbar.min.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/calendar.css')
+    // color switcher css include
+    link(rel='stylesheet' type='text/css' href='assets/css/colors/style-switcher.css')
+    link(id='color_theme' rel='stylesheet' type='text/css' href='assets/css/colors/default.css')
+    // custom css include
+    link(rel='stylesheet' type='text/css' href='assets/css/style.css')
+    style.
+      @media screen and (min-width:0px) and (max-width:980px) {
+      #slide-section {
+      margin-top: -5px !important;
+      }
+      
+      .breadcrumb-section {
+      margin-top: -5px !important;
+      }
+      }
+      
+      .breadcrumb-section {
+      margin-top: 100px;
+      }
+      
+      .add-btn {
+      /* margin: 0 10px; */
+      padding: 0 20px;
+      background-color: #ffbe30;
+      border-radius: 50%;
+      /* display: inline-block;
+      text-align: center; */
+      }
+      
+      .user-prifile-div {
+      padding: 100px 0;
+      }
+      
+      .profile-img {
+      width: 15vw;
+      height: 15vw;
+      background: #f00;
+      border-radius: 50%;
+      box-shadow: 0 0 2px black;
+      overflow: hidden;
+      }
+      
+      .profile-detail {
+      width: 100%;
+      margin: 20px 0;
+      padding: 10px 0;
+      text-align: left;
+      }
+      
+      .profile-detail h2 {
+      margin: 0;
+      }
+      
+      .profile-detail p {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      }
+      
+      label {
+      cursor: pointer;
+      /* Style as you please, it will become the visible UI component. */
+      }
+      
+      #avatar {
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+      }
+      
+      #update_profile_form {
+      display: none;
+      }
+      
+      .custome-btn-2 {
+      font-weight: 700;
+      padding: 12px 45px;
+      text-align: center;
+      color: #333333;
+      border-radius: 30px;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: 3px solid #ffbe30;
+      }
+  body
+    // backtotop - start
+    #thetop.thetop
+    .backtotop
+      a.scroll(href='#thetop')
+        i.fas.fa-angle-double-up
+    // backtotop - end
+    // preloader - start
+    #preloader
+    // preloader - end
+    //
+      header-section - start
+      ==================================================
+    header#header-section.header-section.default-header-section.auto-hide-header.clearfix
+      // header-bottom - start
+      .header-bottom
+        .container
+          .row
+            // site-logo-wrapper - start
+            .col-lg-3
+              .site-logo-wrapper
+                a.logo(href='index-1.html')
+                  img(src='assets/images/0.site-logo.png' alt='logo_not_found')
+            // site-logo-wrapper - end
+            // mainmenu-wrapper - start
+            .col-lg-9
+              .mainmenu-wrapper
+                .row
+                  // menu-item-list - start
+                  .col-lg-11
+                    .menu-item-list.ul-li.clearfix
+                      ul
+                        li.menu-item-has-children
+                          a(href='Finalindex.html') Logout
+                  // menu-item-list - end
+                  // menu-item-list - start
+                  .col-lg-1
+                    .user-search-btn-group.ul-li.clearfix
+                      ul
+                        li
+                          a(href='login.html')
+                            i.fas.fa-user
+                  // menu-item-list - end
+            // mainmenu-wrapper - end
+      // header-bottom - end
+    //
+      header-section - end
+      ==================================================
+    //
+      breadcrumb-section - start
+      ==================================================
+    section#breadcrumb-section.breadcrumb-section.clearfix
+      .jarallax(style='background-image: url(assets/images/breadcrumb/0.breadcrumb-bg.jpg);')
+        .overlay-black
+          .container
+            .row.justify-content-center
+              .col-lg-6.col-md-12.col-sm-12
+                // breadcrumb-title - start
+                .breadcrumb-title.text-center.mb-3
+                  span.sub-title harmoni events
+                  h2.big-title
+                    strong Dashbord
+                // breadcrumb-title - end
+                // breadcrumb-list - start
+                .breadcrumb-list
+                  ul
+                    li.breadcrumb-item.active(aria-current='page')
+                      | Get your all data At one Place
+                // breadcrumb-list - end
+    //
+      breadcrumb-section - end
+      ==================================================
+    .container
+      .row
+        .col-4
+          //
+            UserProfile Section - start
+            ==================================================
+          section.user-prifile-div
+            .profile-img
+              img.img.img-fluid(src='assets/images/profile_pic.jpeg' alt='Profile Pic')
+            .profile-detail
+              h2 Chevli Shiv
+              p example@gamil.com
+            button#editProfileBtn.w-100.py-2.btn.btn-dark Edit Profile
+            .container.text-center.py-5
+              a.custom-btn(href='')  Book Event
+          //
+            UserProfile Section - end
+            ==================================================
+        .col-8
+          //
+            contact-section - start
+            ==================================================
+          section.contact-section.sec-ptb-100.clearfix(id='update_profile_form')
+            .container
+              // section-title - start
+              .section-title.mb-50
+                h2.big-title update Profile 
+              // section-title - end
+              // update-profile Form - start
+              .contact-form.form-wrapper.text-center
+                form(action=' ' method='post')
+                  .row
+                    .col-lg-6.col-md-6.col-sm-12
+                      .form-item
+                        input(type='text' placeholder='Your Name' required)
+                    .col-lg-6.col-md-6.col-sm-12
+                      .form-item
+                        input(type='email' placeholder='Email Address' required)
+                    .col-lg-6.col-md-6.col-sm-12
+                      .form-item
+                        input(type='text' placeholder='Your Country' required)
+                    .col-lg-6.col-md-6.col-sm-12
+                      .form-item
+                        input(type='tel' placeholder='Phone Number' required)
+                    .col-lg-12.col-md-12.col-sm-12
+                      label(for='avatar') Select image
+                      input#avatar(type='file' name='avatar' accept='image/png, image/jpeg')
+                    button.custom-btn.mx-auto.my-5(type='submit') update Profile
+              // update-profile Form - end
+          //
+            contact-section - end
+            ==================================================
+          //
+            event-section - start
+            ==================================================
+          section#event-section.event-section.bg-gray-light.sec-ptb-100.clearfix
+            .container
+              .row
+                // - start
+                .col-lg-12.col-md-12.col-sm-12
+                  .search-result-form
+                    form(action='#!')
+                      ul
+                        li
+                          span.result-text 5 Search results from 20 events
+                        li
+                          label(for='year-select') Years:
+                          select#year-select
+                            option(selected='') 2018
+                            option(value='1') 2019
+                            option(value='2') 2020
+                            option(value='3') 2021
+                        li
+                          label(for='munth-select') Months:
+                          select#munth-select
+                            option(selected='') June
+                            option(value='1') July
+                            option(value='2') August
+                    ul.nav.event-layout-btngroup
+                      li
+                        a.active(data-toggle='tab' href='#list-style')
+                          i.fas.fa-th-list
+                      li
+                        a(data-toggle='tab' href='#grid-style')
+                          i.fas.fa-th
+                  .tab-content
+                    #list-style.tab-pane.fade.in.active.show
+                      // event-item - start
+                      .event-list-item.clearfix
+                        // event-image - start
+                        .event-image
+                          .post-date
+                            span.date 26
+                            small.month june
+                          img(src='assets/images/event/event-1.jpg' alt='Image_not_found')
+                        // event-image - end
+                        // event-content - start
+                        .event-content
+                          .event-title.mb-15
+                            h3.title
+                              | Barcelona
+                              strong Food truck Festival 2018
+                          p.discription-text.mb-30
+                            | Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                            | adipiscing
+                            | elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                            | laoreet dolore
+                            | magna...
+                          .event-info-list.ul-li.clearfix
+                            ul
+                              li
+                                span.icon
+                                  i.fas.fa-ticket-alt
+                                .info-content
+                                  small Max Seats
+                                  h3 2,250 seats
+                              li
+                                a.tickets-details-btn(href='#!')
+                                  | Details
+                        // event-content - end
+                      // event-item - end
+                      // event-item - start
+                      .event-list-item.clearfix
+                        // event-image - start
+                        .event-image
+                          .post-date
+                            span.date 26
+                            small.month june
+                          img(src='assets/images/event/event-2.jpg' alt='Image_not_found')
+                        // event-image - end
+                        // event-content - start
+                        .event-content
+                          .event-title.mb-15
+                            h3.title
+                              | Barcelona
+                              strong Food truck Festival 2018
+                          p.discription-text.mb-30
+                            | Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                            | adipiscing
+                            | elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                            | laoreet dolore
+                            | magna...
+                          .event-info-list.ul-li.clearfix
+                            ul
+                              li
+                                span.icon
+                                  i.fas.fa-ticket-alt
+                                .info-content
+                                  small Max Seats
+                                  h3 2,250 seats
+                              li
+                                a.tickets-details-btn(href='#!')
+                                  | Details
+                        // event-content - end
+                      // event-item - end
+                      // event-item - start
+                      .event-list-item.clearfix
+                        // event-image - start
+                        .event-image
+                          .post-date
+                            span.date 26
+                            small.month june
+                          img(src='assets/images/event/event-3.jpg' alt='Image_not_found')
+                        // event-image - end
+                        // event-content - start
+                        .event-content
+                          .event-title.mb-15
+                            h3.title
+                              | Barcelona
+                              strong Food truck Festival 2018
+                          p.discription-text.mb-30
+                            | Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                            | adipiscing
+                            | elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                            | laoreet dolore
+                            | magna...
+                          .event-info-list.ul-li.clearfix
+                            ul
+                              li
+                                span.icon
+                                  i.fas.fa-ticket-alt
+                                .info-content
+                                  small Max Seats
+                                  h3 2,250 seats
+                              li
+                                a.tickets-details-btn(href='#!')
+                                  | Details
+                        // event-content - end
+                      // event-item - end
+                      // event-item - start
+                      .event-list-item.clearfix
+                        // event-image - start
+                        .event-image
+                          .post-date
+                            span.date 26
+                            small.month june
+                          img(src='assets/images/event/event-4.jpg' alt='Image_not_found')
+                        // event-image - end
+                        // event-content - start
+                        .event-content
+                          .event-title.mb-15
+                            h3.title
+                              | Barcelona
+                              strong Food truck Festival 2018
+                          p.discription-text.mb-30
+                            | Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                            | adipiscing
+                            | elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                            | laoreet dolore
+                            | magna...
+                          .event-info-list.ul-li.clearfix
+                            ul
+                              li
+                                span.icon
+                                  i.fas.fa-ticket-alt
+                                .info-content
+                                  small Max Seats
+                                  h3 2,250 seats
+                              li
+                                a.tickets-details-btn(href='#!')
+                                  | Details
+                        // event-content - end
+                      // event-item - end
+                      // event-item - start
+                      .event-list-item.clearfix
+                        // event-image - start
+                        .event-image
+                          .post-date
+                            span.date 26
+                            small.month june
+                          img(src='assets/images/event/event-5.jpg' alt='Image_not_found')
+                        // event-image - end
+                        // event-content - start
+                        .event-content
+                          .event-title.mb-15
+                            h3.title
+                              | Barcelona
+                              strong Food truck Festival 2018
+                          p.discription-text.mb-30
+                            | Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                            | adipiscing
+                            | elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                            | laoreet dolore
+                            | magna...
+                          .event-info-list.ul-li.clearfix
+                            ul
+                              li
+                                span.icon
+                                  i.fas.fa-ticket-alt
+                                .info-content
+                                  small Max Seats
+                                  h3 2,250 seats
+                              li
+                                a.tickets-details-btn(href='#!')
+                                  | Details
+                        // event-content - end
+                      // event-item - end
+                      .pagination.ul-li.clearfix
+                        ul
+                          li.page-item.prev-item
+                            a.page-link(href='#!') Prev
+                          li.page-item
+                            a.page-link(href='#!') 01
+                          li.page-item.active
+                            a.page-link(href='#!') 02
+                          li.page-item
+                            a.page-link(href='#!') 03
+                          li.page-item
+                            a.page-link(href='#!') 04
+                          li.page-item
+                            a.page-link(href='#!') 05
+                          li.page-item.next-item
+                            a.page-link(href='#!') Next
+                    #grid-style.tab-pane.fade
+                      .row.justify-content-center
+                        // event-grid-item - start
+                        .col-lg-6.col-md-6.col-sm-12
+                          .event-grid-item
+                            // event-image - start
+                            .event-image
+                              .post-date
+                                span.date 26
+                                small.month june
+                              img(src='assets/images/event/1.event-grid.jpg' alt='Image_not_found')
+                            // event-image - end
+                            // event-content - start
+                            .event-content
+                              .event-title.mb-30
+                                h3.title
+                                  | Barcelona Food Truck Festival 2018-2019
+                              .event-post-meta.ul-li-block.mb-30
+                                ul
+                                  li
+                                    span.icon
+                                      i.far.fa-clock
+                                    | Start 20:00pm - 22:00pm
+                                  li
+                                    span.icon
+                                      i.fas.fa-map-marker-alt
+                                    | Manhattan, New York
+                              a.tickets-details-btn(href='#!')
+                                | Details
+                            // event-content - end
+                        // event-grid-item - end
+                        // event-grid-item - start
+                        .col-lg-6.col-md-6.col-sm-12
+                          .event-grid-item
+                            // event-image - start
+                            .event-image
+                              .post-date
+                                span.date 26
+                                small.month june
+                              img(src='assets/images/event/2.event-grid.jpg' alt='Image_not_found')
+                            // event-image - end
+                            // event-content - start
+                            .event-content
+                              .event-title.mb-30
+                                h3.title
+                                  | Barcelona Food Truck Festival 2018-2019
+                              .event-post-meta.ul-li-block.mb-30
+                                ul
+                                  li
+                                    span.icon
+                                      i.far.fa-clock
+                                    | Start 20:00pm - 22:00pm
+                                  li
+                                    span.icon
+                                      i.fas.fa-map-marker-alt
+                                    | Manhattan, New York
+                              a.tickets-details-btn(href='#!')
+                                | Details
+                            // event-content - end
+                        // event-grid-item - end
+                        // event-grid-item - start
+                        .col-lg-6.col-md-6.col-sm-12
+                          .event-grid-item
+                            // event-image - start
+                            .event-image
+                              .post-date
+                                span.date 26
+                                small.month june
+                              img(src='assets/images/event/1.event-grid.jpg' alt='Image_not_found')
+                            // event-image - end
+                            // event-content - start
+                            .event-content
+                              .event-title.mb-30
+                                h3.title
+                                  | Barcelona Food Truck Festival 2018-2019
+                              .event-post-meta.ul-li-block.mb-30
+                                ul
+                                  li
+                                    span.icon
+                                      i.far.fa-clock
+                                    | Start 20:00pm - 22:00pm
+                                  li
+                                    span.icon
+                                      i.fas.fa-map-marker-alt
+                                    | Manhattan, New York
+                              a.tickets-details-btn(href='#!')
+                                | Details
+                            // event-content - end
+                        // event-grid-item - end
+                        // event-grid-item - start
+                        .col-lg-6.col-md-6.col-sm-12
+                          .event-grid-item
+                            // event-image - start
+                            .event-image
+                              .post-date
+                                span.date 26
+                                small.month june
+                              img(src='assets/images/event/2.event-grid.jpg' alt='Image_not_found')
+                            // event-image - end
+                            // event-content - start
+                            .event-content
+                              .event-title.mb-30
+                                h3.title
+                                  | Barcelona Food Truck Festival 2018-2019
+                              .event-post-meta.ul-li-block.mb-30
+                                ul
+                                  li
+                                    span.icon
+                                      i.far.fa-clock
+                                    | Start 20:00pm - 22:00pm
+                                  li
+                                    span.icon
+                                      i.fas.fa-map-marker-alt
+                                    | Manhattan, New York
+                              a.tickets-details-btn(href='#!')
+                                | Details
+                            // event-content - end
+                        // event-grid-item - end
+                        // event-grid-item - start
+                        .col-lg-6.col-md-6.col-sm-12
+                          .event-grid-item
+                            // event-image - start
+                            .event-image
+                              .post-date
+                                span.date 26
+                                small.month june
+                              img(src='assets/images/event/1.event-grid.jpg' alt='Image_not_found')
+                            // event-image - end
+                            // event-content - start
+                            .event-content
+                              .event-title.mb-30
+                                h3.title
+                                  | Barcelona Food Truck Festival 2018-2019
+                              .event-post-meta.ul-li-block.mb-30
+                                ul
+                                  li
+                                    span.icon
+                                      i.far.fa-clock
+                                    | Start 20:00pm - 22:00pm
+                                  li
+                                    span.icon
+                                      i.fas.fa-map-marker-alt
+                                    | Manhattan, New York
+                              a.tickets-details-btn(href='#!')
+                                | Details
+                            // event-content - end
+                        // event-grid-item - end
+                        // event-grid-item - start
+                        .col-lg-6.col-md-6.col-sm-12
+                          .event-grid-item
+                            // event-image - start
+                            .event-image
+                              .post-date
+                                span.date 26
+                                small.month june
+                              img(src='assets/images/event/2.event-grid.jpg' alt='Image_not_found')
+                            // event-image - end
+                            // event-content - start
+                            .event-content
+                              .event-title.mb-30
+                                h3.title
+                                  | Barcelona Food Truck Festival 2018-2019
+                              .event-post-meta.ul-li-block.mb-30
+                                ul
+                                  li
+                                    span.icon
+                                      i.far.fa-clock
+                                    | Start 20:00pm - 22:00pm
+                                  li
+                                    span.icon
+                                      i.fas.fa-map-marker-alt
+                                    | Manhattan, New York
+                              a.tickets-details-btn(href='#!')
+                                | Details
+                            // event-content - end
+                        // event-grid-item - end
+                        // pagination - start
+                        .pagination.ul-li.clearfix
+                          ul
+                            li.page-item.prev-item
+                              a.page-link(href='#!') Prev
+                            li.page-item
+                              a.page-link(href='#!') 01
+                            li.page-item.active
+                              a.page-link(href='#!') 02
+                            li.page-item
+                              a.page-link(href='#!') 03
+                            li.page-item
+                              a.page-link(href='#!') 04
+                            li.page-item
+                              a.page-link(href='#!') 05
+                            li.page-item.next-item
+                              a.page-link(href='#!') Next
+                        // pagination - end
+                // - end
+          //
+            event-section - end
+            ==================================================
+    //
+      footer-section2 - start
+      ==================================================
+    footer#footer-section.footer-section.footer-section2.clearfix
+      // footer-top - start
+      .footer-top.sec-ptb-100.clearfix
+        .container
+          .row
+            // about-wrapper - start
+            .col-lg-4.col-md-6.col-sm-12
+              .about-wrapper
+                // site-logo-wrapper - start
+                .site-logo-wrapper.mb-30
+                  a.logo(href='index-1.html')
+                    img(src='assets/images/1.site-logo.png' alt='logo_not_found')
+                // site-logo-wrapper - end
+                // basic-info - start
+                .basic-info.ul-li-block.mb-50
+                  ul
+                    li
+                      i.fas.fa-map-marker-alt
+                      | Surat, Gujrat, India
+                    li
+                      i.fas.fa-envelope
+                      a(href='#!') contact@example.com
+                    li
+                      i.fas.fa-phone
+                      a(href='#!') 100 800 1234 5555
+                // basic-info - end
+                // social-links - start
+                .social-links.ul-li
+                  h3.social-title network
+                  ul
+                    li
+                      a(href='#!')
+                        i.fab.fa-facebook-f
+                    li
+                      a(href='#!')
+                        i.fab.fa-twitter
+                    li
+                      a(href='#!')
+                        i.fab.fa-twitch
+                    li
+                      a(href='#!')
+                        i.fab.fa-google-plus-g
+                    li
+                      a(href='#!')
+                        i.fab.fa-instagram
+                // social-links - end
+            // about-wrapper - end
+            // usefullinks-wrapper - start
+            .col-lg-8.col-md-6.col-sm-12
+              .usefullinks-wrapper.ul-li-block
+                h3.footer-item-title
+                  | useful
+                  strong links
+                ul
+                  li
+                    a(href='about.html') About Harmoni
+                  li
+                    a(href='#!') Disclaimer
+                  li
+                    a(href='contact.html') Contact us
+                  li
+                    a(href='dashboard.html') Events Schedule
+                  li
+                    a(href='bookEvent.html') Venues
+                  // <li><a href="#!">Pricing Plans</a></li>
+            // usefullinks-wrapper - end
+      // footer-top - end
+    //
+      footer-section2 - end
+      ==================================================
+    // fraimwork - jquery include
+    script(src='assets/js/jquery-3.3.1.min.js')
+    script(src='assets/js/popper.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    // carousel jquery include
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/owl.carousel.min.js')
+    // map jquery include
+    script(src='assets/js/gmap3.min.js')
+    // calendar jquery include
+    script(src='assets/js/atc.min.js')
+    // others jquery include
+    script(src='assets/js/jquery.magnific-popup.min.js')
+    script(src='assets/js/isotope.pkgd.min.js')
+    script(src='assets/js/jarallax.min.js')
+    script(src='assets/js/jquery.mCustomScrollbar.concat.min.js')
+    // gallery img loaded - jqury include
+    script(src='assets/js/imagesloaded.pkgd.min.js')
+    // multy count down - jqury include
+    script(src='assets/js/jquery.countdown.js')
+    // custom jquery include
+    script(src='assets/js/custom.js')
+    script.
+      document.getElementById("editProfileBtn").onclick = function () {
+      
+      document.getElementById("event-section").style.display = "none";
+      document.getElementById("update_profile_form").style.display = "block";
+      }

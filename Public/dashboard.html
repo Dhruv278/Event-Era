@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Dashbord</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- fraimwork - css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- icon css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css">
+
+    <!-- carousel css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+
+    <!-- others css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
+
+    <!-- color switcher css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/style-switcher.css">
+    <link id="color_theme" rel="stylesheet" type="text/css" href="assets/css/colors/default.css">
+
+    <!-- custom css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <style>
+        @media screen and (min-width:0px) and (max-width:980px) {
+            #slide-section {
+                margin-top: -5px !important;
+            }
+
+            .breadcrumb-section {
+                margin-top: -5px !important;
+            }
+        }
+
+        .breadcrumb-section {
+            margin-top: 100px;
+        }
+
+        .add-btn {
+            /* margin: 0 10px; */
+            padding: 0 20px;
+            background-color: #ffbe30;
+            border-radius: 50%;
+            /* display: inline-block;
+            text-align: center; */
+        }
+
+        .user-prifile-div {
+            padding: 100px 0;
+        }
+
+        .profile-img {
+            width: 15vw;
+            height: 15vw;
+            background: #f00;
+            border-radius: 50%;
+            box-shadow: 0 0 2px black;
+            overflow: hidden;
+        }
+
+        .profile-detail {
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        .profile-detail h2 {
+            margin: 0;
+        }
+
+        .profile-detail p {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            cursor: pointer;
+            /* Style as you please, it will become the visible UI component. */
+        }
+
+        #avatar {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        #update_profile_form {
+            display: none;
+        }
+
+        .custome-btn-2 {
+            font-weight: 700;
+            padding: 12px 45px;
+            text-align: center;
+            color: #333333;
+            border-radius: 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            border: 3px solid #ffbe30;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- backtotop - start -->
+    <div id="thetop" class="thetop"></div>
+    <div class='backtotop'>
+        <a href="#thetop" class='scroll'>
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+    </div>
+    <!-- backtotop - end -->
+
+    <!-- preloader - start -->
+    <div id="preloader"></div>
+    <!-- preloader - end -->
+
+
+
+    <!-- header-section - start
+    		================================================== -->
+    <header id="header-section" class="header-section default-header-section auto-hide-header clearfix">
+
+        <!-- header-bottom - start -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <!-- site-logo-wrapper - start -->
+                    <div class="col-lg-3">
+                        <div class="site-logo-wrapper">
+                            <a href="index-1.html" class="logo">
+                                <img src="assets/images/0.site-logo.png" alt="logo_not_found">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- site-logo-wrapper - end -->
+
+                    <!-- mainmenu-wrapper - start -->
+                    <div class="col-lg-9">
+                        <div class="mainmenu-wrapper">
+                            <div class="row">
+
+                                <!-- menu-item-list - start -->
+                                <div class="col-lg-11">
+                                    <div class="menu-item-list ul-li clearfix">
+                                        <ul>
+                                            <li class="menu-item-has-children">
+                                                <a href="Finalindex.html">Logout</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- menu-item-list - end -->
+
+                                <!-- menu-item-list - start -->
+                                <div class="col-lg-1">
+                                    <div class="user-search-btn-group ul-li clearfix">
+                                        <ul>
+                                            <li>
+                                                <a href="login.html">
+                                                    <i class="fas fa-user"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- menu-item-list - end -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mainmenu-wrapper - end -->
+
+                </div>
+            </div>
+        </div>
+        <!-- header-bottom - end -->
+
+    </header>
+    <!-- header-section - end
+    		================================================== -->
+
+    <!-- breadcrumb-section - start
+                                        		================================================== -->
+    <section id="breadcrumb-section" class="breadcrumb-section clearfix">
+        <div class="jarallax" style="background-image: url(assets/images/breadcrumb/0.breadcrumb-bg.jpg);">
+            <div class="overlay-black">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+
+                            <!-- breadcrumb-title - start -->
+                            <div class="breadcrumb-title text-center mb-3">
+                                <span class="sub-title">harmoni events</span>
+                                <h2 class="big-title"><strong>Dashbord</strong></h2>
+                            </div>
+                            <!-- breadcrumb-title - end -->
+
+                            <!-- breadcrumb-list - start -->
+                            <div class="breadcrumb-list">
+                                <ul>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Get your all data At one Place
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- breadcrumb-list - end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb-section - end
+                                        		================================================== -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+
+                <!-- UserProfile Section - start
+                                                		================================================== -->
+                <section class="user-prifile-div">
+
+                    <div class="profile-img">
+                        <img src="assets/images/profile_pic.jpeg" alt="Profile Pic" class="img img-fluid">
+                    </div>
+                    <div class="profile-detail">
+                        <h2>Chevli Shiv</h2>
+                        <p>example@gamil.com</p>
+                    </div>
+                    <button class="w-100 py-2 btn btn-dark" id="editProfileBtn">Edit Profile</button>
+                    <div class="container text-center py-5">
+                        <a href="" class="custom-btn"> Book Event</a>
+                    </div>
+
+                </section>
+                <!-- UserProfile Section - end
+                                                		================================================== -->
+
+            </div>
+            <div class="col-8">
+
+
+                <!-- contact-section - start
+                                		================================================== -->
+                <section id="update_profile_form" class="contact-section sec-ptb-100 clearfix">
+                    <div class="container">
+
+                        <!-- section-title - start -->
+                        <div class="section-title mb-50">
+                            <h2 class="big-title">update Profile </h2>
+                        </div>
+                        <!-- section-title - end -->
+
+                        <!-- update-profile Form - start -->
+                        <div class="contact-form form-wrapper text-center">
+                            <form action=" " method="post">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-item">
+                                            <input type="text" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-item">
+                                            <input type="email" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-item">
+                                            <input type="text" placeholder="Your Country" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-item">
+                                            <input type="tel" placeholder="Phone Number" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <label for="avatar">Select image</label>
+                                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                                    </div>
+
+                                    <button type="submit" class="custom-btn mx-auto my-5">update Profile</button>
+
+                                </div>
+                            </form>
+                        </div>
+                        <!-- update-profile Form - end -->
+
+                    </div>
+                </section>
+                <!-- contact-section - end
+                                		================================================== -->
+
+
+
+                <!-- event-section - start
+                		================================================== -->
+                <section id="event-section" class="event-section bg-gray-light sec-ptb-100 clearfix">
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- - start -->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                <div class="search-result-form">
+                                    <form action="#!">
+                                        <ul>
+
+                                            <li>
+                                                <span class="result-text">5 Search results from 20 events</span>
+                                            </li>
+                                            <li>
+                                                <label for="year-select">Years:</label>
+                                                <select id="year-select">
+                                                    <option selected="">2018</option>
+                                                    <option value="1">2019</option>
+                                                    <option value="2">2020</option>
+                                                    <option value="3">2021</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <label for="munth-select">Months:</label>
+                                                <select id="munth-select">
+                                                    <option selected="">June</option>
+                                                    <option value="1">July</option>
+                                                    <option value="2">August</option>
+                                                </select>
+                                            </li>
+
+                                        </ul>
+                                    </form>
+
+                                    <ul class="nav event-layout-btngroup">
+                                        <li>
+                                            <a class="active" data-toggle="tab" href="#list-style"><i
+                                                    class="fas fa-th-list"></i></a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="tab" href="#grid-style"><i class="fas fa-th"></i></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="tab-content">
+                                    <div id="list-style" class="tab-pane fade in active show">
+
+                                        <!-- event-item - start -->
+                                        <div class="event-list-item clearfix">
+
+                                            <!-- event-image - start -->
+                                            <div class="event-image">
+                                                <div class="post-date">
+                                                    <span class="date">26</span>
+                                                    <small class="month">june</small>
+                                                </div>
+                                                <img src="assets/images/event/event-1.jpg" alt="Image_not_found">
+                                            </div>
+                                            <!-- event-image - end -->
+
+                                            <!-- event-content - start -->
+                                            <div class="event-content">
+                                                <div class="event-title mb-15">
+                                                    <h3 class="title">
+                                                        Barcelona <strong>Food truck Festival 2018</strong>
+                                                    </h3>
+                                                </div>
+                                                <p class="discription-text mb-30">
+                                                    Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                                                    adipiscing
+                                                    elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                                                    laoreet dolore
+                                                    magna...
+                                                </p>
+                                                <div class="event-info-list ul-li clearfix">
+                                                    <ul>
+
+                                                        <li>
+                                                            <span class="icon">
+                                                                <i class="fas fa-ticket-alt"></i>
+                                                            </span>
+                                                            <div class="info-content">
+                                                                <small>Max Seats</small>
+                                                                <h3>2,250 seats</h3>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!" class="tickets-details-btn">
+                                                                Details
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- event-content - end -->
+
+                                        </div>
+                                        <!-- event-item - end -->
+
+                                        <!-- event-item - start -->
+                                        <div class="event-list-item clearfix">
+
+                                            <!-- event-image - start -->
+                                            <div class="event-image">
+                                                <div class="post-date">
+                                                    <span class="date">26</span>
+                                                    <small class="month">june</small>
+                                                </div>
+                                                <img src="assets/images/event/event-2.jpg" alt="Image_not_found">
+                                            </div>
+                                            <!-- event-image - end -->
+
+                                            <!-- event-content - start -->
+                                            <div class="event-content">
+                                                <div class="event-title mb-15">
+                                                    <h3 class="title">
+                                                        Barcelona <strong>Food truck Festival 2018</strong>
+                                                    </h3>
+                                                </div>
+                                                <p class="discription-text mb-30">
+                                                    Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                                                    adipiscing
+                                                    elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                                                    laoreet dolore
+                                                    magna...
+                                                </p>
+                                                <div class="event-info-list ul-li clearfix">
+                                                    <ul>
+
+                                                        <li>
+                                                            <span class="icon">
+                                                                <i class="fas fa-ticket-alt"></i>
+                                                            </span>
+                                                            <div class="info-content">
+                                                                <small>Max Seats</small>
+                                                                <h3>2,250 seats</h3>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!" class="tickets-details-btn">
+                                                                Details
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- event-content - end -->
+
+                                        </div>
+                                        <!-- event-item - end -->
+
+                                        <!-- event-item - start -->
+                                        <div class="event-list-item clearfix">
+
+                                            <!-- event-image - start -->
+                                            <div class="event-image">
+                                                <div class="post-date">
+                                                    <span class="date">26</span>
+                                                    <small class="month">june</small>
+                                                </div>
+                                                <img src="assets/images/event/event-3.jpg" alt="Image_not_found">
+                                            </div>
+                                            <!-- event-image - end -->
+
+                                            <!-- event-content - start -->
+                                            <div class="event-content">
+                                                <div class="event-title mb-15">
+                                                    <h3 class="title">
+                                                        Barcelona <strong>Food truck Festival 2018</strong>
+                                                    </h3>
+                                                </div>
+                                                <p class="discription-text mb-30">
+                                                    Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                                                    adipiscing
+                                                    elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                                                    laoreet dolore
+                                                    magna...
+                                                </p>
+                                                <div class="event-info-list ul-li clearfix">
+                                                    <ul>
+
+                                                        <li>
+                                                            <span class="icon">
+                                                                <i class="fas fa-ticket-alt"></i>
+                                                            </span>
+                                                            <div class="info-content">
+                                                                <small>Max Seats</small>
+                                                                <h3>2,250 seats</h3>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!" class="tickets-details-btn">
+                                                                Details
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- event-content - end -->
+
+                                        </div>
+                                        <!-- event-item - end -->
+
+                                        <!-- event-item - start -->
+                                        <div class="event-list-item clearfix">
+
+                                            <!-- event-image - start -->
+                                            <div class="event-image">
+                                                <div class="post-date">
+                                                    <span class="date">26</span>
+                                                    <small class="month">june</small>
+                                                </div>
+                                                <img src="assets/images/event/event-4.jpg" alt="Image_not_found">
+                                            </div>
+                                            <!-- event-image - end -->
+
+                                            <!-- event-content - start -->
+                                            <div class="event-content">
+                                                <div class="event-title mb-15">
+                                                    <h3 class="title">
+                                                        Barcelona <strong>Food truck Festival 2018</strong>
+                                                    </h3>
+                                                </div>
+                                                <p class="discription-text mb-30">
+                                                    Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                                                    adipiscing
+                                                    elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                                                    laoreet dolore
+                                                    magna...
+                                                </p>
+                                                <div class="event-info-list ul-li clearfix">
+                                                    <ul>
+
+                                                        <li>
+                                                            <span class="icon">
+                                                                <i class="fas fa-ticket-alt"></i>
+                                                            </span>
+                                                            <div class="info-content">
+                                                                <small>Max Seats</small>
+                                                                <h3>2,250 seats</h3>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!" class="tickets-details-btn">
+                                                                Details
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- event-content - end -->
+
+                                        </div>
+                                        <!-- event-item - end -->
+
+                                        <!-- event-item - start -->
+                                        <div class="event-list-item clearfix">
+
+                                            <!-- event-image - start -->
+                                            <div class="event-image">
+                                                <div class="post-date">
+                                                    <span class="date">26</span>
+                                                    <small class="month">june</small>
+                                                </div>
+                                                <img src="assets/images/event/event-5.jpg" alt="Image_not_found">
+                                            </div>
+                                            <!-- event-image - end -->
+
+                                            <!-- event-content - start -->
+                                            <div class="event-content">
+                                                <div class="event-title mb-15">
+                                                    <h3 class="title">
+                                                        Barcelona <strong>Food truck Festival 2018</strong>
+                                                    </h3>
+                                                </div>
+                                                <p class="discription-text mb-30">
+                                                    Lorem ipsum dollor site amet the best consectuer diam nerdistin
+                                                    adipiscing
+                                                    elites sed diam nonummy nibh the ebest uismod delgas tincidunt ut
+                                                    laoreet dolore
+                                                    magna...
+                                                </p>
+                                                <div class="event-info-list ul-li clearfix">
+                                                    <ul>
+
+                                                        <li>
+                                                            <span class="icon">
+                                                                <i class="fas fa-ticket-alt"></i>
+                                                            </span>
+                                                            <div class="info-content">
+                                                                <small>Max Seats</small>
+                                                                <h3>2,250 seats</h3>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!" class="tickets-details-btn">
+                                                                Details
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- event-content - end -->
+
+                                        </div>
+                                        <!-- event-item - end -->
+
+                                        <div class="pagination ul-li clearfix">
+                                            <ul>
+                                                <li class="page-item prev-item">
+                                                    <a class="page-link" href="#!">Prev</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#!">01</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#!">02</a></li>
+                                                <li class="page-item"><a class="page-link" href="#!">03</a></li>
+                                                <li class="page-item"><a class="page-link" href="#!">04</a></li>
+                                                <li class="page-item"><a class="page-link" href="#!">05</a></li>
+                                                <li class="page-item next-item">
+                                                    <a class="page-link" href="#!">Next</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="grid-style" class="tab-pane fade">
+                                        <div class="row justify-content-center">
+
+                                            <!-- event-grid-item - start -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="event-grid-item">
+                                                    <!-- event-image - start -->
+                                                    <div class="event-image">
+                                                        <div class="post-date">
+                                                            <span class="date">26</span>
+                                                            <small class="month">june</small>
+                                                        </div>
+                                                        <img src="assets/images/event/1.event-grid.jpg"
+                                                            alt="Image_not_found">
+                                                    </div>
+                                                    <!-- event-image - end -->
+
+                                                    <!-- event-content - start -->
+                                                    <div class="event-content">
+                                                        <div class="event-title mb-30">
+                                                            <h3 class="title">
+                                                                Barcelona Food Truck Festival 2018-2019
+                                                            </h3>
+                                                        </div>
+                                                        <div class="event-post-meta ul-li-block mb-30">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="far fa-clock"></i>
+                                                                    </span>
+                                                                    Start 20:00pm - 22:00pm
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                    </span>
+                                                                    Manhattan, New York
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" class="tickets-details-btn">
+                                                            Details
+                                                        </a>
+                                                    </div>
+                                                    <!-- event-content - end -->
+                                                </div>
+                                            </div>
+                                            <!-- event-grid-item - end -->
+
+                                            <!-- event-grid-item - start -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="event-grid-item">
+                                                    <!-- event-image - start -->
+                                                    <div class="event-image">
+                                                        <div class="post-date">
+                                                            <span class="date">26</span>
+                                                            <small class="month">june</small>
+                                                        </div>
+                                                        <img src="assets/images/event/2.event-grid.jpg"
+                                                            alt="Image_not_found">
+                                                    </div>
+                                                    <!-- event-image - end -->
+
+                                                    <!-- event-content - start -->
+                                                    <div class="event-content">
+                                                        <div class="event-title mb-30">
+                                                            <h3 class="title">
+                                                                Barcelona Food Truck Festival 2018-2019
+                                                            </h3>
+                                                        </div>
+                                                        <div class="event-post-meta ul-li-block mb-30">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="far fa-clock"></i>
+                                                                    </span>
+                                                                    Start 20:00pm - 22:00pm
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                    </span>
+                                                                    Manhattan, New York
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" class="tickets-details-btn">
+                                                            Details
+                                                        </a>
+                                                    </div>
+                                                    <!-- event-content - end -->
+                                                </div>
+                                            </div>
+                                            <!-- event-grid-item - end -->
+
+                                            <!-- event-grid-item - start -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="event-grid-item">
+                                                    <!-- event-image - start -->
+                                                    <div class="event-image">
+                                                        <div class="post-date">
+                                                            <span class="date">26</span>
+                                                            <small class="month">june</small>
+                                                        </div>
+                                                        <img src="assets/images/event/1.event-grid.jpg"
+                                                            alt="Image_not_found">
+                                                    </div>
+                                                    <!-- event-image - end -->
+
+                                                    <!-- event-content - start -->
+                                                    <div class="event-content">
+                                                        <div class="event-title mb-30">
+                                                            <h3 class="title">
+                                                                Barcelona Food Truck Festival 2018-2019
+                                                            </h3>
+                                                        </div>
+                                                        <div class="event-post-meta ul-li-block mb-30">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="far fa-clock"></i>
+                                                                    </span>
+                                                                    Start 20:00pm - 22:00pm
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                    </span>
+                                                                    Manhattan, New York
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" class="tickets-details-btn">
+                                                            Details
+                                                        </a>
+                                                    </div>
+                                                    <!-- event-content - end -->
+                                                </div>
+                                            </div>
+                                            <!-- event-grid-item - end -->
+
+                                            <!-- event-grid-item - start -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="event-grid-item">
+                                                    <!-- event-image - start -->
+                                                    <div class="event-image">
+                                                        <div class="post-date">
+                                                            <span class="date">26</span>
+                                                            <small class="month">june</small>
+                                                        </div>
+                                                        <img src="assets/images/event/2.event-grid.jpg"
+                                                            alt="Image_not_found">
+                                                    </div>
+                                                    <!-- event-image - end -->
+
+                                                    <!-- event-content - start -->
+                                                    <div class="event-content">
+                                                        <div class="event-title mb-30">
+                                                            <h3 class="title">
+                                                                Barcelona Food Truck Festival 2018-2019
+                                                            </h3>
+                                                        </div>
+                                                        <div class="event-post-meta ul-li-block mb-30">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="far fa-clock"></i>
+                                                                    </span>
+                                                                    Start 20:00pm - 22:00pm
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                    </span>
+                                                                    Manhattan, New York
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" class="tickets-details-btn">
+                                                            Details
+                                                        </a>
+                                                    </div>
+                                                    <!-- event-content - end -->
+                                                </div>
+                                            </div>
+                                            <!-- event-grid-item - end -->
+
+                                            <!-- event-grid-item - start -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="event-grid-item">
+                                                    <!-- event-image - start -->
+                                                    <div class="event-image">
+                                                        <div class="post-date">
+                                                            <span class="date">26</span>
+                                                            <small class="month">june</small>
+                                                        </div>
+                                                        <img src="assets/images/event/1.event-grid.jpg"
+                                                            alt="Image_not_found">
+                                                    </div>
+                                                    <!-- event-image - end -->
+
+                                                    <!-- event-content - start -->
+                                                    <div class="event-content">
+                                                        <div class="event-title mb-30">
+                                                            <h3 class="title">
+                                                                Barcelona Food Truck Festival 2018-2019
+                                                            </h3>
+                                                        </div>
+                                                        <div class="event-post-meta ul-li-block mb-30">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="far fa-clock"></i>
+                                                                    </span>
+                                                                    Start 20:00pm - 22:00pm
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                    </span>
+                                                                    Manhattan, New York
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" class="tickets-details-btn">
+                                                            Details
+                                                        </a>
+                                                    </div>
+                                                    <!-- event-content - end -->
+                                                </div>
+                                            </div>
+                                            <!-- event-grid-item - end -->
+
+                                            <!-- event-grid-item - start -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="event-grid-item">
+                                                    <!-- event-image - start -->
+                                                    <div class="event-image">
+                                                        <div class="post-date">
+                                                            <span class="date">26</span>
+                                                            <small class="month">june</small>
+                                                        </div>
+                                                        <img src="assets/images/event/2.event-grid.jpg"
+                                                            alt="Image_not_found">
+                                                    </div>
+                                                    <!-- event-image - end -->
+
+                                                    <!-- event-content - start -->
+                                                    <div class="event-content">
+                                                        <div class="event-title mb-30">
+                                                            <h3 class="title">
+                                                                Barcelona Food Truck Festival 2018-2019
+                                                            </h3>
+                                                        </div>
+                                                        <div class="event-post-meta ul-li-block mb-30">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="far fa-clock"></i>
+                                                                    </span>
+                                                                    Start 20:00pm - 22:00pm
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon">
+                                                                        <i class="fas fa-map-marker-alt"></i>
+                                                                    </span>
+                                                                    Manhattan, New York
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" class="tickets-details-btn">
+                                                            Details
+                                                        </a>
+                                                    </div>
+                                                    <!-- event-content - end -->
+                                                </div>
+                                            </div>
+                                            <!-- event-grid-item - end -->
+
+                                            <!-- pagination - start -->
+                                            <div class="pagination ul-li clearfix">
+                                                <ul>
+                                                    <li class="page-item prev-item">
+                                                        <a class="page-link" href="#!">Prev</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#!">01</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#!">02</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#!">03</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#!">04</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#!">05</a></li>
+                                                    <li class="page-item next-item">
+                                                        <a class="page-link" href="#!">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- pagination - end -->
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- - end -->
+
+
+                        </div>
+                    </div>
+                </section>
+                <!-- event-section - end
+                		================================================== -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer-section2 - start
+                                        		================================================== -->
+    <footer id="footer-section" class="footer-section footer-section2 clearfix">
+
+        <!-- footer-top - start -->
+        <div class="footer-top sec-ptb-100 clearfix">
+            <div class="container">
+                <div class="row">
+
+                    <!-- about-wrapper - start -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="about-wrapper">
+
+                            <!-- site-logo-wrapper - start -->
+                            <div class="site-logo-wrapper mb-30">
+                                <a href="index-1.html" class="logo">
+                                    <img src="assets/images/1.site-logo.png" alt="logo_not_found">
+                                </a>
+                            </div>
+                            <!-- site-logo-wrapper - end -->
+
+
+                            <!-- basic-info - start -->
+                            <div class="basic-info ul-li-block mb-50">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Surat, Gujrat, India
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="#!">contact@example.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone"></i>
+                                        <a href="#!">100 800 1234 5555</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- basic-info - end -->
+
+                            <!-- social-links - start -->
+                            <div class="social-links ul-li">
+                                <h3 class="social-title">network</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fab fa-twitch"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- social-links - end -->
+
+                        </div>
+                    </div>
+                    <!-- about-wrapper - end -->
+
+
+                    <!-- usefullinks-wrapper - start -->
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="usefullinks-wrapper ul-li-block">
+                            <h3 class="footer-item-title">
+                                useful <strong>links</strong>
+                            </h3>
+                            <ul>
+                                <li><a href="about.html">About Harmoni</a></li>
+                                <li><a href="#!">Disclaimer</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="dashboard.html">Events Schedule</a></li>
+                                <li><a href="bookEvent.html">Venues</a></li>
+                                <!-- <li><a href="#!">Pricing Plans</a></li> -->
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- usefullinks-wrapper - end -->
+
+
+                </div>
+            </div>
+        </div>
+        <!-- footer-top - end -->
+
+    </footer>
+    <!-- footer-section2 - end
+                                        		================================================== -->
+
+
+
+
+    <!-- fraimwork - jquery include -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- carousel jquery include -->
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- map jquery include -->
+    <script src="assets/js/gmap3.min.js"></script>
+
+    <!-- calendar jquery include -->
+    <script src="assets/js/atc.min.js"></script>
+
+    <!-- others jquery include -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- gallery img loaded - jqury include -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!-- multy count down - jqury include -->
+    <script src="assets/js/jquery.countdown.js"></script>
+
+
+    <!-- custom jquery include -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        document.getElementById("editProfileBtn").onclick = function () {
+
+            document.getElementById("event-section").style.display = "none";
+            document.getElementById("update_profile_form").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

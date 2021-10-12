@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Harmoni - Register</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- fraimwork - css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- icon css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css">
+
+    <!-- custom css include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <style>
+        @media screen and (min-width:0px) and (max-width:980px) {
+            #slide-section {
+                margin-top: -5px !important;
+            }
+        }
+
+        body {
+            background-image: url("/assets/images/blog/big-ebent1.jpg");
+            background-size: cover;
+            position: relative;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(15px);
+        }
+
+        #error {
+            font-weight: 900;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- preloader - start -->
+    <div id="preloader"></div>
+    <!-- preloader - end -->
+
+
+    <div id="register-modal" class="reglog-modal-wrapper register-modal clearfix"
+        style="background-image: url(assets/images/login-modal-bg.jpg);">
+        <div class="overlay-black clearfix">
+
+            <!-- leftside-content - start -->
+            <div class="leftside-content">
+                <div class="site-logo-wrapper mb-80">
+                    <a href="Finalindex.html" class="logo">
+                        <img src="assets/images/2.site-logo.png" alt="logo_not_found">
+                    </a>
+                </div>
+                <div class="register-login-link mb-80">
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li class="active"><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="copyright-text d-none">
+                    <p class="m-0">©2019 <a href="#!" class="yellow-color">Harmoni.com</a>
+                        all right reserved, made with <i class="fas fa-heart"></i> by
+                        jThemes Studio </p>
+                </div>
+            </div>
+            <!-- leftside-content - end -->
+
+            <!-- rightside-content - start -->
+            <div class="rightside-content text-center">
+
+                <div class="mb-30">
+                    <h2 class="form-title title-large white-color">Account
+                        <strong>Register</strong>
+                    </h2>
+                    <span class="form-subtitle white-color">Have an account?
+                        <strong>LOGIN
+                            NOW</strong></span>
+                </div>
+
+                <div class="login-form text-center mb-2">
+                    <form action="login.html" method="POST" id="register">
+                        <div class="form-item">
+                            <input type="text" name="user_name" placeholder="User Name" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="email" name="email_address" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="number" name="mo_number" id="mo_number" placeholder="Modile Number" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="password" name="password" id="password" minlength="6" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="form-item">
+                            <input type="password" name="repet_password" id="repet_password" minlength="6"
+                                placeholder="Repeat Password" required>
+                        </div>
+                        <div class="human-verification text-left">
+                            <input type="checkbox" id="imnotarobot">
+                            <label for="imnotarobot">I'm not a robot</label>
+                            <span class="verification-image">
+                                <img src="assets/images/iamnotrobot.png" alt="Image_not_found">
+                            </span>
+                        </div>
+                        <button type="submit" class="login-btn">login now</button>
+                    </form>
+                </div>
+
+                <div class="bottom-text white-color">
+                    <p class="m-0 " style="font-weight: 500;">
+                        * All field mandatory.
+                    </p>
+                    <p class="m-0" id="error">
+                        Error massage
+                    </p>
+                </div>
+
+            </div>
+            <!-- rightside-content - end -->
+
+
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("preloader").style.display = "none";
+        })
+
+        document.getElementById("register").onsubmit = function () {
+            console.log("Form Submited")
+            let p1 = document.getElementById("password");
+            let p2 = document.getElementById("repet_password");
+            let mo_num = document.getElementById("mo_number");
+            if (mo_num.value.length != 10) {
+                document.getElementById("error").innerText = "Mobile number must be of 10 digits";
+                mo_num.value = "";
+                mo_num.focus();
+                return false;
+            }
+            if (p1.value != p2.value) {
+                document.getElementById("error").innerText = "password Is not Matching. Try Again";
+                p1.focus();
+                p1.value = "";
+                p2.value = "";
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
